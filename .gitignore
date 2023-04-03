@@ -1,21 +1,18 @@
-# build output
-dist/
-# generated types
-.astro/
+# We don't want lockfiles in stacks, as people could use a different package manager
+# This part will be removed by `remix.init`
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+pnpm-lock.yml
 
-# dependencies
-node_modules/
+node_modules
 
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-
-# environment variables
+/build
+/public/build
 .env
-.env.production
 
-# macOS-specific files
-.DS_Store
+/cypress/screenshots
+/cypress/videos
+/postgres-data
+
+/app/styles/tailwind.css
