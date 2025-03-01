@@ -17,5 +17,13 @@ pnpm-debug.log*
 .env
 .env.production
 
-# macOS-specific files
+# Editor directories
 .DS_Store
+.hbuilderx
+.vscode/*
+!.vscode/extensions.json
+.idea
+.vscode
+.project
+.cache
+.local
